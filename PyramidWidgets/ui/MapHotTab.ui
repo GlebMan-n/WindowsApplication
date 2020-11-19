@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapHotTab</class>
+ <widget class="QWidget" name="MapHotTab">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>692</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>692</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Палетка</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>456</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>692</width>
+     <height>456</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>692</width>
+     <height>456</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget
+{
+	border-image: url(:/Pyramid/fon_next_menu.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="gps">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/gps_vkl.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/gps_vikl.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/gps_vikl.png);;
+     border-width: 3;}
+
+ QPushButton:checked {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/gps_vkl.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sim">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>270</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/3g_vkl.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/3g_vikl.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/3g_vikl.png);;
+     border-width: 3;}
+QPushButton:checked {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/3g_vkl.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>601</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>22</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>управление устройством</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wifi">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>90</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/vifi_vkl.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/vifi_vikl.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/vifi_vikl.png);;
+     border-width: 3;}
+QPushButton:checked {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/vifi_vkl.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bluetooth">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/Bluetooth_vkl.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/Bluetooth_vikl.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/Bluetooth_vikl.png);;
+     border-width: 3;}
+QPushButton:checked {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/Bluetooth_vkl.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="indicators">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>90</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/indikatori_vkl.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/indikatori_vikl.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/indikatori_vikl.png);;
+     border-width: 3;}
+QPushButton:checked {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/indikatori_vkl.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ipWireless">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>270</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/ip wireless_vkl.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/ip wireless_vikl.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/ip wireless_vikl.png);;
+     border-width: 3;}
+QPushButton:checked {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/ip wireless_vkl.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/PyramidWidgets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/PiramidM">
+ 
+<file>close_tool_n.png</file>
+    
+<file>close_tool.png</file>
+    
+<file>logo.png</file>
+    
+<file>qt_ru.qm</file>
+  
+<file>Pyramid.ico</file>
+ 
+</qresource>
+</RCC>

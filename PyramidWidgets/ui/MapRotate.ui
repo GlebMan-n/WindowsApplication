@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RotateMenu</class>
+ <widget class="QWidget" name="RotateMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>693</width>
+    <height>452</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>693</width>
+    <height>452</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>693</width>
+    <height>452</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>456</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>692</width>
+     <height>456</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>692</width>
+     <height>456</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget
+{
+	border-image: url(:/Pyramid/fon_next_menu.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="rotate_move_but">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>140</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/move_orient_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/move_orient.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/move_orient.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rotate_noth_but">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/noth_orient_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+   	border-image: url(:/Pyramid/noth_orient.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+    	border-image: url(:/Pyramid/noth_orient.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rotate_south_but">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>140</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/south_orient_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/south_orient.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/south_orient.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>611</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>22</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>поворот карты</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/PyramidWidgets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

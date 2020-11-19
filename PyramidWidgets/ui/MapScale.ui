@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScaleMenu</class>
+ <widget class="QWidget" name="ScaleMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>692</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>692</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="gridWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>456</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#gridWidget
+{
+	border-image: url(:/Pyramid/fon_next_menu.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="scale500k_but">
+    <property name="geometry">
+     <rect>
+      <x>356</x>
+      <y>209</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/500k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/500k.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/500k.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale50k_but">
+    <property name="geometry">
+     <rect>
+      <x>518</x>
+      <y>89</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/50k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/50k.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/50k.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale1k_but">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>89</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/1000k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/1000k.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/1000k.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale100k_but">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>209</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/100k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/100k.png);;
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/100k.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale4mln_but">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>336</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/4mln_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/4mln.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/4mln.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale10k_but">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>89</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/10k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/10k.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/10k.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale5mln_but">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>336</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/5mln_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/5mln.png);
+    border-width: 3;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale8mln_but">
+    <property name="geometry">
+     <rect>
+      <x>356</x>
+      <y>336</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/8mln_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/8mln.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/8mln.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale200k_but">
+    <property name="geometry">
+     <rect>
+      <x>194</x>
+      <y>209</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/200k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/200k.png);
+    border-width: 3;}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale1mln_but">
+    <property name="geometry">
+     <rect>
+      <x>518</x>
+      <y>209</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/1mln_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/1mln.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/1mln.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale25k_but">
+    <property name="geometry">
+     <rect>
+      <x>356</x>
+      <y>89</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/25k_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/25k.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/25k.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="scale40mln_but">
+    <property name="geometry">
+     <rect>
+      <x>518</x>
+      <y>336</y>
+      <width>139</width>
+      <height>78</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>139</width>
+      <height>78</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/40mln_n.png);
+    border-width: 3;}
+ 
+QPushButton{
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/40mln.png);
+    border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/40mln.png);
+    border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>9</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>22</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>выбор масштаба</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo_2">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>49</y>
+      <width>631</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>17</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>масштабы города:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>172</y>
+      <width>621</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>17</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>маcштабы области:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>295</y>
+      <width>621</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>17</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>масштабы мира:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>scale1k_but</tabstop>
+  <tabstop>scale10k_but</tabstop>
+  <tabstop>scale25k_but</tabstop>
+  <tabstop>scale50k_but</tabstop>
+  <tabstop>scale100k_but</tabstop>
+  <tabstop>scale200k_but</tabstop>
+  <tabstop>scale500k_but</tabstop>
+  <tabstop>scale1mln_but</tabstop>
+  <tabstop>scale4mln_but</tabstop>
+  <tabstop>scale5mln_but</tabstop>
+  <tabstop>scale8mln_but</tabstop>
+  <tabstop>scale40mln_but</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../Resources/PyramidWidgets.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <signal>signScale1k()</signal>
+ </slots>
+</ui>

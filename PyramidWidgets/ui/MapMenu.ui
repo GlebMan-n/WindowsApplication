@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapMenu</class>
+ <widget class="QWidget" name="MapMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>693</width>
+    <height>452</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>693</width>
+    <height>452</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>693</width>
+    <height>452</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>693</width>
+     <height>452</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>693</width>
+     <height>452</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>693</width>
+     <height>452</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget{
+border-image: url(:/Pyramid/podlogka.png);
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="2" colspan="2">
+     <widget class="QPushButton" name="scale_but">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/mashtab_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/mashtab.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/mashtab.png);
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="mapBut">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/kartaBut_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/kartaBut.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/kartaBut.png);;
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="2">
+     <widget class="QPushButton" name="dist_but">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/instrumenti_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/instrumenti.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/instrumenti.png);
+     border-width: 3;}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="rotate_but">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/povorot_k_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/povorot_k.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/povorot_k.png);;
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="settings">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/nastroiki_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/nastroiki.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/nastroiki.png);
+     border-width: 3;}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4" colspan="3">
+     <widget class="QPushButton" name="search_but">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/naiti_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/naiti.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/naiti.png);
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4" colspan="3">
+     <widget class="QPushButton" name="nullBut3">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/pust.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/pust.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/pust.png);
+     border-width: 3;}
+
+QPushButton:checked{
+    padding-right: 15px; /* make room for the arrows */
+    border-image: url(:/Pyramid/pust.png);
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="manualRoute">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */	
+	border-image: url(:/Pyramid/otrisovka_m_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/otrisovka_m.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/otrisovka_m.png);
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="referance">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/spravochnik_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/spravochnik.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/spravochnik.png);
+     border-width: 3;}
+
+QPushButton:checked{
+    padding-right: 15px; /* make room for the arrows */
+    border-image: url(:/Pyramid/pust.png);
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QPushButton" name="naviBut">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/orientir_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/orientir.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/orientir.png);
+     border-width: 3;}
+
+QPushButton:checked{
+    padding-right: 15px; /* make room for the arrows */
+    border-image: url(:/Pyramid/orientir.png);
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="exchange_but">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/obmen_dann_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/obmen_dann.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/obmen_dann.png);
+     border-width: 3;}
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="objects">
+      <property name="minimumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>173</width>
+        <height>152</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/objekti_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/objekti.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/objekti.png);;
+     border-width: 3;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/PyramidWidgets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MapManualRoute</class>
+ <widget class="QWidget" name="MapManualRoute">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>692</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>692</width>
+    <height>456</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Палетка</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>456</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>692</width>
+     <height>456</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>692</width>
+     <height>456</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget
+{
+	border-image: url(:/Pyramid/fon_next_menu.png);
+}</string>
+   </property>
+   <widget class="QPushButton" name="mapInput">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	
+	border-image: url(:/Pyramid/nagatija_po_karte_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/nagatija_po_karte.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/nagatija_po_karte.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="coordInput">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>150</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	
+	border-image: url(:/Pyramid/vvod_koordinat_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/vvod_koordinat.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/vvod_koordinat.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clear">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>150</y>
+      <width>173</width>
+      <height>152</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>173</width>
+      <height>152</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QPushButton:hover:pressed {
+    padding-right: 15px; /* make room for the arrows */
+	
+	border-image: url(:/Pyramid/steret_marshrut_n.png);
+     border-width: 3;}
+ 
+QPushButton{
+     padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/steret_marshrut.png);
+     border-width: 3;}
+
+ QPushButton:hover {
+    padding-right: 15px; /* make room for the arrows */
+	border-image: url(:/Pyramid/steret_marshrut.png);
+     border-width: 3;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusVideo">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>561</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Trebuchet MS</family>
+      <pointsize>22</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="text">
+     <string>отрисовать маршрут</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/PyramidWidgets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

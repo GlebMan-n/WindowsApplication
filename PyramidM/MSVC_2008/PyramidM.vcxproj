@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug VLD|Win32">
+      <Configuration>Debug VLD</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE73820A-796E-4943-836C-4DB15FA4ED7C}</ProjectGuid>
+    <RootNamespace>GisBeginPluginQt</RootNamespace>
+    <SccProjectName>$/Pyramid.AKPS/ProtonGis/PyramidM/PyramidM/MSVC_2008</SccProjectName>
+    <SccAuxPath>http://devserv:8080/tfs/lemz</SccAuxPath>
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;.\..\..\..;.\..;.;.\GeneratedFiles\$(Platform)\$(Configuration);.\GeneratedFiles;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXmlPatterns;..\..\..\opencv\build\include\opencv;..\..\..\opencv\build\include\opencv2\calib3d;..\..\..\opencv\build\include\opencv2\contrib;..\..\..\opencv\build\include\opencv2\core;..\..\..\opencv\build\include\opencv2\features2d;..\..\..\opencv\build\include\opencv2\flann;..\..\..\opencv\build\include\opencv2\gpu;..\..\..\opencv\build\include\opencv2\highgui;..\..\..\opencv\build\include\opencv2\imgproc;..\..\..\opencv\build\include\opencv2\legacy;..\..\..\opencv\build\include\opencv2\ml;..\..\..\opencv\build\include\opencv2\objdetect;..\..\..\opencv\build\include\opencv2;..\..\..\opencv\build\include\opencv2\ts;..\..\..\opencv\build\include\opencv2\video;..\MSVC_2008;$(QTDIR)\include\QtWebKit;..\..\..\;..\..\;..\..\..\..\PyramidM;C:\Sources\PyramidM_V_2\gis\GisBase\cgis;..\..\..\PyramidM_V_2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command />
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtGui4.lib;QtXml4.lib;QtNetwork4.lib;Psapi.Lib;QtXmlPatterns4.lib;PyramidWidgets.lib;WMIO2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP10 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;.\..\..\..;.\..;.;.\GeneratedFiles\$(Platform)\$(Configuration);.\GeneratedFiles;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXmlPatterns;..\..\..\opencv\build\include\opencv;..\..\..\opencv\build\include\opencv2\calib3d;..\..\..\opencv\build\include\opencv2\contrib;..\..\..\opencv\build\include\opencv2\core;..\..\..\opencv\build\include\opencv2\features2d;..\..\..\opencv\build\include\opencv2\flann;..\..\..\opencv\build\include\opencv2\gpu;..\..\..\opencv\build\include\opencv2\highgui;..\..\..\opencv\build\include\opencv2\imgproc;..\..\..\opencv\build\include\opencv2\legacy;..\..\..\opencv\build\include\opencv2\ml;..\..\..\opencv\build\include\opencv2\objdetect;..\..\..\opencv\build\include\opencv2;..\..\..\opencv\build\include\opencv2\ts;..\..\..\opencv\build\include\opencv2\video;..\MSVC_2008;$(QTDIR)\include\QtWebKit;..\..\..\;..\..\;..\..\..\..\PyramidM;C:\Sources\PyramidM_V_2\vld\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;_DEBUG;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command />
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtXmld4.lib;QtNetworkd4.lib;Psapi.Lib;QtXmlPatternsd4.lib;WMIO2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;.\..\..\..;.\..;.;.\GeneratedFiles\$(Platform)\$(Configuration);.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;_DEBUG;DEBUG_MEMORY_LEAK;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command>copy ..\..\..\vld\bin\* "$(OutDir)"
+</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtXmld4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../../../vld/lib;$(SolutionDir)$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplyWizardSettings.cpp" />
+    <ClCompile Include="BreakLenLine.cpp" />
+    <ClCompile Include="CalcClass.cpp" />
+    <ClCompile Include="CurrentPosToken.cpp" />
+    <ClCompile Include="DrawNavi.cpp" />
+    <ClCompile Include="ExchangeDataClass.cpp" />
+    <ClCompile Include="ExchangeDialogClass.cpp" />
+    <ClCompile Include="GpsClass.cpp" />
+    <ClCompile Include="HotTabFunctions.cpp" />
+    <ClCompile Include="KmlParser.cpp" />
+    <ClCompile Include="LineDialogClass.cpp" />
+    <ClCompile Include="LineGetInterface.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="ManualRouteClass.cpp" />
+    <ClCompile Include="MapToolsClass.cpp" />
+    <ClCompile Include="MarkTokenClass.cpp" />
+    <ClCompile Include="NaviClass.cpp" />
+    <ClCompile Include="PaletkaClass.cpp" />
+    <ClCompile Include="..\PiramidM.cpp" />
+    <ClCompile Include="PointOnMap.cpp" />
+    <ClCompile Include="..\pyramidmediator.cpp" />
+    <ClCompile Include="RouteClass.cpp" />
+    <ClCompile Include="SearchGpsClass.cpp" />
+    <ClCompile Include="SelectRgnClass.cpp" />
+    <ClCompile Include="senddataclass.cpp" />
+    <ClCompile Include="..\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SunsetClass.cpp" />
+    <ClCompile Include="TestGpsPorts.cpp" />
+    <ClCompile Include="TimerClass.cpp" />
+    <ClCompile Include="TknPaletka.cpp" />
+    <ClCompile Include="TknRoute.cpp" />
+    <ClCompile Include="TrackClass.cpp" />
+    <ClCompile Include="GeneratedFiles\qrc_PiramidM.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_ApplyWizardSettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_BreakLenLine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_CalcClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_CurrentPosToken.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_DrawNavi.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_ExchangeDataClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_ExchangeDialogClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_GpsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_HotTabFunctions.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_KmlParser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_LineDialogClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_LineGetInterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_ManualRouteClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_MapToolsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_MarkTokenClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_NaviClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_PaletkaClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_PiramidM.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_PointOnMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_pyramidmediator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_RouteClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_SearchGpsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_SelectRgnClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_senddataclass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_SunsetClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_TestGpsPorts.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_TimerClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Release\moc_TrackClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_ApplyWizardSettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_BreakLenLine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_CalcClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_CurrentPosToken.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_DrawNavi.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_ExchangeDataClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_ExchangeDialogClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_GpsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_HotTabFunctions.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_KmlParser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_LineDialogClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_LineGetInterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_ManualRouteClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_MapToolsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_MarkTokenClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_NaviClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_PaletkaClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_PiramidM.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_PointOnMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_pyramidmediator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_RouteClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_SearchGpsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_SelectRgnClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_senddataclass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_SunsetClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_TestGpsPorts.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_TimerClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug\moc_TrackClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_ApplyWizardSettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_BreakLenLine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_CalcClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_CurrentPosToken.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_DrawNavi.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_ExchangeDataClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_ExchangeDialogClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_GpsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_HotTabFunctions.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_KmlParser.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_LineDialogClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_LineGetInterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_ManualRouteClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_MapToolsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_MarkTokenClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_NaviClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_PaletkaClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_PiramidM.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_PointOnMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_pyramidmediator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_RouteClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_SearchGpsClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_SelectRgnClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_senddataclass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_SunsetClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_TestGpsPorts.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_TimerClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Win32\Debug VLD\moc_TrackClass.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ApplyWizardSettings.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing ApplyWizardSettings.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../ApplyWizardSettings.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ApplyWizardSettings.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../ApplyWizardSettings.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ApplyWizardSettings.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../ApplyWizardSettings.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="BreakLenLine.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing BreakLenLine.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../BreakLenLine.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing BreakLenLine.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../BreakLenLine.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing BreakLenLine.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../BreakLenLine.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="CalcClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing CalcClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../CalcClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CalcClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../CalcClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CalcClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../CalcClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="CalcFunctions.h" />
+    <CustomBuild Include="CurrentPosToken.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing CurrentPosToken.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../CurrentPosToken.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CurrentPosToken.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../CurrentPosToken.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CurrentPosToken.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../CurrentPosToken.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="DrawNavi.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing DrawNavi.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../DrawNavi.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DrawNavi.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../DrawNavi.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DrawNavi.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../DrawNavi.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ExchangeDataClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing ExchangeDataClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../ExchangeDataClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ExchangeDataClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../ExchangeDataClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ExchangeDataClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../ExchangeDataClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ExchangeDialogClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing ExchangeDialogClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"   -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../ExchangeDialogClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ExchangeDialogClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../ExchangeDialogClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ExchangeDialogClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../ExchangeDialogClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GpsClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing GpsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../GpsClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GpsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../GpsClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GpsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../GpsClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="HotTabFunctions.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing HotTabFunctions.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../HotTabFunctions.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing HotTabFunctions.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../HotTabFunctions.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing HotTabFunctions.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../HotTabFunctions.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="KmlParser.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing KmlParser.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../KmlParser.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing KmlParser.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../KmlParser.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing KmlParser.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../KmlParser.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="LineDialogClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing LineDialogClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../LineDialogClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing LineDialogClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../LineDialogClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing LineDialogClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../LineDialogClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="LineGetInterface.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing LineGetInterface.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../LineGetInterface.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing LineGetInterface.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../LineGetInterface.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing LineGetInterface.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../LineGetInterface.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ManualRouteClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing ManualRouteClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../ManualRouteClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ManualRouteClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../ManualRouteClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ManualRouteClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../ManualRouteClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="MapToolsClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing MapToolsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../MapToolsClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MapToolsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../MapToolsClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MapToolsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../MapToolsClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="MarkTokenClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing MarkTokenClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../MarkTokenClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MarkTokenClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../MarkTokenClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MarkTokenClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../MarkTokenClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="NaviClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing NaviClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../NaviClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing NaviClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../NaviClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing NaviClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../NaviClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="PaletkaClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing PaletkaClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"   -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../PaletkaClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PaletkaClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../PaletkaClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PaletkaClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../PaletkaClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\PiramidM.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing PiramidM.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"   -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../../PiramidM.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PiramidM.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../../PiramidM.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PiramidM.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../../PiramidM.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="PointOnMap.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing PointOnMap.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../PointOnMap.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PointOnMap.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../PointOnMap.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PointOnMap.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../PointOnMap.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\pyramidmediator.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing pyramidmediator.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"   -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../../pyramidmediator.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing pyramidmediator.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../../pyramidmediator.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing pyramidmediator.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../../pyramidmediator.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\resource.h" />
+    <CustomBuild Include="RouteClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing RouteClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"   -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../RouteClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing RouteClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../RouteClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing RouteClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../RouteClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="SearchGpsClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing SearchGpsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../SearchGpsClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SearchGpsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../SearchGpsClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SearchGpsClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../SearchGpsClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="SelectRgnClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing SelectRgnClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../SelectRgnClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SelectRgnClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../SelectRgnClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SelectRgnClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../SelectRgnClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="senddataclass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing senddataclass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"   -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../senddataclass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing senddataclass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../senddataclass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing senddataclass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../senddataclass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\struct.h" />
+    <CustomBuild Include="SunsetClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing SunsetClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../SunsetClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SunsetClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../SunsetClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SunsetClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../SunsetClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="TestGpsPorts.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing TestGpsPorts.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../TestGpsPorts.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TestGpsPorts.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../TestGpsPorts.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TestGpsPorts.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../TestGpsPorts.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="TimerClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing TimerClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../TimerClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TimerClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../TimerClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TimerClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../TimerClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="TknPaletka.h" />
+    <ClInclude Include="TknRoute.h" />
+    <CustomBuild Include="TrackClass.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Moc%27ing TrackClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp" "-fStdAfx.h" "-f../../../TrackClass.h"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DDEBUG_MEMORY_LEAK -DQT_DLL "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TrackClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -D_DEBUG -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\vld\lib" "-fStdAfx.h" "-f../../../TrackClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TrackClass.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp"  -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_DLL  "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtXml" "-I.\..\..\.." "-I.\.." "-I." "-I.\GeneratedFiles\$(Platform)\$(Configuration)\." "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXmlPatterns" "-I.\..\..\..\opencv\build\include\opencv" "-I.\..\..\..\opencv\build\include\opencv2\calib3d" "-I.\..\..\..\opencv\build\include\opencv2\contrib" "-I.\..\..\..\opencv\build\include\opencv2\core" "-I.\..\..\..\opencv\build\include\opencv2\features2d" "-I.\..\..\..\opencv\build\include\opencv2\flann" "-I.\..\..\..\opencv\build\include\opencv2\gpu" "-I.\..\..\..\opencv\build\include\opencv2\highgui" "-I.\..\..\..\opencv\build\include\opencv2\imgproc" "-I.\..\..\..\opencv\build\include\opencv2\legacy" "-I.\..\..\..\opencv\build\include\opencv2\ml" "-I.\..\..\..\opencv\build\include\opencv2\objdetect" "-I.\..\..\..\opencv\build\include\opencv2" "-I.\..\..\..\opencv\build\include\opencv2\ts" "-I.\..\..\..\opencv\build\include\opencv2\video" "-I.\..\MSVC_2008" "-I$(QTDIR)\include\QtWebKit" "-I.\..\..\.." "-I.\..\.." "-I.\..\..\..\..\PyramidM" "-IC:\Sources\PyramidM_V_2\gis\GisBase\cgis" "-I.\..\..\..\PyramidM_V_2" "-fStdAfx.h" "-f../../../TrackClass.h"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Platform)\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="WorkStructures.h" />
+    <ClInclude Include="GeneratedFiles\ui_DialogExchange.h" />
+    <ClInclude Include="GeneratedFiles\ui_DialogLenLineDlg.h" />
+    <ClInclude Include="GeneratedFiles\ui_MapSelectTopo.h" />
+    <ClInclude Include="GeneratedFiles\ui_PyramidM.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\ui\DialogExchange.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ui\DialogLenLineDlg.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\ui\MapSelectTopo.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\PyramidM.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\Resources\PiramidM.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">Rcc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">%(FullPath);..\Resources\close_tool_n.png;..\Resources\close_tool.png;..\Resources\fon_next_menu.png;..\Resources\logo.png;..\Resources\qt_ru.qm;..\Resources\Pyramid.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);..\Resources\close_tool_n.png;..\Resources\close_tool.png;..\Resources\fon_next_menu.png;..\Resources\logo.png;..\Resources\qt_ru.qm;..\Resources\Pyramid.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);..\Resources\close_tool_n.png;..\Resources\close_tool.png;..\Resources\fon_next_menu.png;..\Resources\logo.png;..\Resources\qt_ru.qm;..\Resources\Pyramid.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\Resources\qt_ru.qm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Resources\close_tool.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\Resources\close_tool_n.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\Resources\fon_next_menu.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\Resources\logo.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\Resources\Pyramid.ico">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug VLD|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <Image Include="Pyramid.ico" />
+    <Image Include="..\Resources\PyramidM.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pyramid.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\gis\CalcField\MSVC_2008\CalcField.vcxproj">
+      <Project>{2fba4664-1c10-4f3d-9d86-fad199034f50}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\GdiExtImgDev\MSVC_2008\GdiExtImgDev.vcxproj">
+      <Project>{f5e24e8c-42e2-4d5c-a12d-d3f7b9a755c6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\libiconv\MSVC_2008\libiconv.vcxproj">
+      <Project>{60701f50-942a-4cf8-853b-9b440d35544c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\libxml\MSVC_2008\libxml.vcxproj">
+      <Project>{7a0981dc-27f5-4635-ac3a-2c76abbc4dec}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\Proj4\MSVC_2008\Proj4.vcxproj">
+      <Project>{b71f691c-ae4b-49de-9db3-e06333fd4a7b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\QtImgDev\MSVC_2008\QtImgDev.vcxproj">
+      <Project>{9e619d5c-81a0-4e49-a20f-b95615417dc3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\win32\MSVC_2008\GisBase.vcxproj">
+      <Project>{37fde31f-8ee8-46dd-813d-8cbcec363e70}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisBase\win32\MSVC_2008\GisBaseCore.vcxproj">
+      <Project>{613f79b8-aa7d-4995-a903-bc8c889ffa81}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisDataInterface\MSVC_2008\GisDataInterface.vcxproj">
+      <Project>{53529e51-be53-457c-8ef6-ef8161feff8e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisGRIB\MSVC_2008\GisGRIB.vcxproj">
+      <Project>{bcb9265f-799d-45f1-b973-7be066dbd640}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisIce\MSVC_2008\GisIce.vcxproj">
+      <Project>{0682ce22-d98d-451c-9245-881debb10756}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GisRls\MSVC_2008\GisRls.vcxproj">
+      <Project>{1c495473-9dbc-4f62-ac5f-b21ffc0943d7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GrUnitsBaseTool\MSVC_2008\GrUnitsBaseTool.vcxproj">
+      <Project>{d793bd5a-e2f9-48cf-93fd-48990da29e68}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\GrUnits\MSVC_2008\GrUnits.vcxproj">
+      <Project>{a0acf68f-e134-4a9a-bd42-c363f5a42b53}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\MmfCalcField\MSVC_2008\MmfCalcField.vcxproj">
+      <Project>{cdecaca1-9e66-4e0e-9421-fd9e3a883496}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\MmfMatrix\MSVC_2008\MmfMatrix.vcxproj">
+      <Project>{1dc0dd6c-0c3e-49fe-b932-fa96d5bcf683}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\MmlMatrix\MSVC_2008\MmlMatrix.vcxproj">
+      <Project>{88350336-964a-4883-b860-343d123b62f2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis\TknMetafile\MSVC_2008\TknMetafile.vcxproj">
+      <Project>{cc2d8d20-9302-4c9a-97a9-efedcb1c3f56}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\GisInterfaceQT\MSVC_2008\GisInterfaceQT.vcxproj">
+      <Project>{fe4d20e8-fa8b-47b9-8fb4-38dbfcf3c7c8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\GisPluginsManager\MSVC_2008\GisPluginsManager.vcxproj">
+      <Project>{ae3b80e1-de92-4641-9f1c-8107ffb8ef5d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\GisWidgets\MSVC_2008\GisWidgets.vcxproj">
+      <Project>{7c6264db-d5a6-45cb-b418-aa46990cede7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\GrUnitsLineTemplateQT\MSVC_2008\GrUnitsLineTemplateQT.vcxproj">
+      <Project>{6fe227ed-a403-46b9-904b-51b432ea88bb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\GrUnitsToolQT\MSVC_2008\GrUnitsToolQT.vcxproj">
+      <Project>{3accd309-5bb4-4d52-83b9-d1c343d9ab87}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\GrUnitsTypeQT\MSVC_2008\GrUnitsTypeQT.vcxproj">
+      <Project>{efcfb920-4b16-4164-aab3-0e0a4f1bba99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\MmfCardEditQt\MSVC_2008\MmfCardEditQt.vcxproj">
+      <Project>{cae3c442-29ab-43d4-a85c-d3e1ed5c249f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\PrintPrepare\MSVC_2008\PrintPrepare.vcxproj">
+      <Project>{77a96916-56f2-4ffa-9613-4396ad04ea5a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\PropertyBrowserQT\MSVC_2008\PropertyBrowserQT.vcxproj">
+      <Project>{bc740a8f-4d98-4f2c-8a7c-6843339e658f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\QtExtendUi\MSVC_2008\QtExtendUi.vcxproj">
+      <Project>{d019683e-20d9-4add-840d-5d4005cd5f59}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gis_tool_qt\TknEditorGeoQT\MSVC_2008\TknEditorGeoQT.vcxproj">
+      <Project>{33c396a7-d9b2-4af1-bc0e-b4f3758f3f41}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ProtonGisFull\Qt4\ProtonGisFull\ProtonGisFull.vcxproj">
+      <Project>{d7d5cd5d-7c12-4b5a-b3a4-31d82cf15a99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PyramidWidgets\PyramidWidgets.vcxproj">
+      <Project>{5c612b32-3179-43a2-83fc-746a03427946}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QGpsLib\QGpsLib.vcxproj">
+      <Project>{da2762cf-4331-4308-a097-58034b4433a9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(PlatformName)\$(ConfigurationName)" UicDir=".\GeneratedFiles" QtVersion_x0020_Windows_x0020_Mobile_x0020_6_x0020_Professional_x0020_SDK_x0020__x0028_ARMV4I_x0029_="4.7.3.wm6.lite" RccDir=".\GeneratedFiles" QtVersion_x0020_Win32="4.8.6" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

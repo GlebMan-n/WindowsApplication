@@ -1,0 +1,440 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GisInterfaceQT", "..\..\..\gis_tool_qt\GisInterfaceQT\MSVC_2008\GisInterfaceQT.vcproj", "{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E} = {53529E51-BE53-457C-8EF6-EF8161FEFF8E}
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683} = {1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F} = {BC740A8F-4D98-4F2C-8A7C-6843339E658F}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7} = {7C6264DB-D5A6-45CB-B418-AA46990CEDE7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtExtendUi", "..\..\..\gis_tool_qt\QtExtendUi\MSVC_2008\QtExtendUi.vcproj", "{D019683E-20D9-4ADD-840D-5D4005CD5F59}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GisDataInterface", "..\..\..\gis\GisDataInterface\MSVC_2008\GisDataInterface.vcproj", "{53529E51-BE53-457C-8EF6-EF8161FEFF8E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrUnits", "..\..\..\gis\GrUnits\MSVC_2008\GrUnits.vcproj", "{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MmfMatrix", "..\..\..\gis\MmfMatrix\MSVC_2008\MmfMatrix.vcproj", "{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindeDataPlugin", "..\..\..\gis_tool_qt\Plugins\FindeDataPlugin\MSVC_2008\FindeDataPlugin.vcproj", "{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E} = {53529E51-BE53-457C-8EF6-EF8161FEFF8E}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrUnitsToolQT", "..\..\..\gis_tool_qt\GrUnitsToolQT\MSVC_2008\GrUnitsToolQT.vcproj", "{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99} = {EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E} = {53529E51-BE53-457C-8EF6-EF8161FEFF8E}
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68} = {D793BD5A-E2F9-48CF-93FD-48990DA29E68}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41} = {33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7} = {7C6264DB-D5A6-45CB-B418-AA46990CEDE7}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrUnitsBaseTool", "..\..\..\gis\GrUnitsBaseTool\MSVC_2008\GrUnitsBaseTool.vcproj", "{D793BD5A-E2F9-48CF-93FD-48990DA29E68}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E} = {53529E51-BE53-457C-8EF6-EF8161FEFF8E}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TknEditorGeoQT", "..\..\..\gis_tool_qt\TknEditorGeoQT\MSVC_2008\TknEditorGeoQT.vcproj", "{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7} = {7C6264DB-D5A6-45CB-B418-AA46990CEDE7}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PropertyBrowserQT", "..\..\..\gis_tool_qt\PropertyBrowserQT\MSVC_2008\PropertyBrowserQT.vcproj", "{BC740A8F-4D98-4F2C-8A7C-6843339E658F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrUnitsTypeQT", "..\..\..\gis_tool_qt\GrUnitsTypeQT\MSVC_2008\GrUnitsTypeQT.vcproj", "{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41} = {33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7} = {7C6264DB-D5A6-45CB-B418-AA46990CEDE7}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+		{6FE227ED-A403-46B9-904B-51B432EA88BB} = {6FE227ED-A403-46B9-904B-51B432EA88BB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GrUnitsLineTemplateQT", "..\..\..\gis_tool_qt\GrUnitsLineTemplateQT\MSVC_2008\GrUnitsLineTemplateQT.vcproj", "{6FE227ED-A403-46B9-904B-51B432EA88BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41} = {33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7} = {7C6264DB-D5A6-45CB-B418-AA46990CEDE7}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TknMetafile", "..\..\..\gis\TknMetafile\MSVC_2008\TknMetafile.vcproj", "{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GisIce", "..\..\..\gis\GisIce\MSVC_2008\GisIce.vcproj", "{0682CE22-D98D-451C-9245-881DEBB10756}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FEEE714-A498-4002-B178-ACA3DA06B598} = {0FEEE714-A498-4002-B178-ACA3DA06B598}
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libShape", "..\..\..\gis\GisIce\libShape\MSVC_2008\libShape.vcproj", "{0FEEE714-A498-4002-B178-ACA3DA06B598}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GisWidgets", "..\..\..\gis_tool_qt\GisWidgets\MSVC_2008\GisWidgets.vcproj", "{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QGpsLib", "..\..\QGpsLib\QGpsLib.vcproj", "{DA2762CF-4331-4308-A097-58034B4433A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PyramidWidgets", "..\..\PyramidWidgets\PyramidWidgets.vcproj", "{5C612B32-3179-43A2-83FC-746A03427946}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA2762CF-4331-4308-A097-58034B4433A9} = {DA2762CF-4331-4308-A097-58034B4433A9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PyramidM", "PyramidM.vcproj", "{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D} = {9501AE23-B3B6-466B-BE8B-65D96642B10D}
+		{5C612B32-3179-43A2-83FC-746A03427946} = {5C612B32-3179-43A2-83FC-746A03427946}
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59} = {D019683E-20D9-4ADD-840D-5D4005CD5F59}
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E} = {53529E51-BE53-457C-8EF6-EF8161FEFF8E}
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683} = {1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F} = {BC740A8F-4D98-4F2C-8A7C-6843339E658F}
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53} = {A0ACF68F-E134-4A9A-BD42-C363F5A42B53}
+		{DA2762CF-4331-4308-A097-58034B4433A9} = {DA2762CF-4331-4308-A097-58034B4433A9}
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7} = {7C6264DB-D5A6-45CB-B418-AA46990CEDE7}
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8} = {FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyDll", "..\CopyDll\MSVC_2008\CopyDllPiramida.vcproj", "{9501AE23-B3B6-466B-BE8B-65D96642B10D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 21
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://portal.spkb-lemz.ru:8080/tfs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\QGpsLib\\QGpsLib.vcproj
+		SccProjectName1 = ../../QGpsLib
+		SccLocalPath1 = ..\\..\\QGpsLib
+		SccProjectUniqueName2 = PyramidM.vcproj
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = ..\\..\\PyramidWidgets\\PyramidWidgets.vcproj
+		SccProjectName3 = ../../PyramidWidgets
+		SccLocalPath3 = ..\\..\\PyramidWidgets
+		SccProjectUniqueName4 = ..\\CopyDll\\MSVC_2008\\CopyDllPiramida.vcproj
+		SccProjectName4 = ../CopyDll/MSVC_2008
+		SccLocalPath4 = ..\\CopyDll\\MSVC_2008
+		SccProjectUniqueName5 = ..\\..\\..\\gis\\GisDataInterface\\MSVC_2008\\GisDataInterface.vcproj
+		SccProjectName5 = ../../../gis/GisDataInterface/MSVC_2008
+		SccLocalPath5 = ..\\..\\..\\gis\\GisDataInterface\\MSVC_2008
+		SccProjectUniqueName6 = ..\\..\\..\\gis\\GisIce\\libShape\\MSVC_2008\\libShape.vcproj
+		SccProjectName6 = ../../../gis/GisIce/libShape/MSVC_2008
+		SccLocalPath6 = ..\\..\\..\\gis\\GisIce\\libShape\\MSVC_2008
+		SccProjectUniqueName7 = ..\\..\\..\\gis\\GisIce\\MSVC_2008\\GisIce.vcproj
+		SccProjectName7 = ../../../gis/GisIce/MSVC_2008
+		SccLocalPath7 = ..\\..\\..\\gis\\GisIce\\MSVC_2008
+		SccProjectUniqueName8 = ..\\..\\..\\gis\\GrUnits\\MSVC_2008\\GrUnits.vcproj
+		SccProjectName8 = ../../../gis/GrUnits/MSVC_2008
+		SccLocalPath8 = ..\\..\\..\\gis\\GrUnits\\MSVC_2008
+		SccProjectUniqueName9 = ..\\..\\..\\gis\\GrUnitsBaseTool\\MSVC_2008\\GrUnitsBaseTool.vcproj
+		SccProjectName9 = ../../../gis/GrUnitsBaseTool/MSVC_2008
+		SccLocalPath9 = ..\\..\\..\\gis\\GrUnitsBaseTool\\MSVC_2008
+		SccProjectUniqueName10 = ..\\..\\..\\gis\\MmfMatrix\\MSVC_2008\\MmfMatrix.vcproj
+		SccProjectName10 = ../../../gis/MmfMatrix/MSVC_2008
+		SccLocalPath10 = ..\\..\\..\\gis\\MmfMatrix\\MSVC_2008
+		SccProjectUniqueName11 = ..\\..\\..\\gis_tool_qt\\GisInterfaceQT\\MSVC_2008\\GisInterfaceQT.vcproj
+		SccProjectName11 = ../../../gis_tool_qt/GisInterfaceQT/MSVC_2008
+		SccLocalPath11 = ..\\..\\..\\gis_tool_qt\\GisInterfaceQT\\MSVC_2008
+		SccProjectUniqueName12 = ..\\..\\..\\gis_tool_qt\\GisWidgets\\MSVC_2008\\GisWidgets.vcproj
+		SccProjectName12 = ../../../gis_tool_qt/GisWidgets/MSVC_2008
+		SccLocalPath12 = ..\\..\\..\\gis_tool_qt\\GisWidgets\\MSVC_2008
+		SccProjectUniqueName13 = ..\\..\\..\\gis_tool_qt\\GrUnitsLineTemplateQT\\MSVC_2008\\GrUnitsLineTemplateQT.vcproj
+		SccProjectName13 = ../../../gis_tool_qt/GrUnitsLineTemplateQT/MSVC_2008
+		SccLocalPath13 = ..\\..\\..\\gis_tool_qt\\GrUnitsLineTemplateQT\\MSVC_2008
+		SccProjectUniqueName14 = ..\\..\\..\\gis_tool_qt\\GrUnitsToolQT\\MSVC_2008\\GrUnitsToolQT.vcproj
+		SccProjectName14 = ../../../gis_tool_qt/GrUnitsToolQT/MSVC_2008
+		SccLocalPath14 = ..\\..\\..\\gis_tool_qt\\GrUnitsToolQT\\MSVC_2008
+		SccProjectUniqueName15 = ..\\..\\..\\gis_tool_qt\\GrUnitsTypeQT\\MSVC_2008\\GrUnitsTypeQT.vcproj
+		SccProjectName15 = ../../../gis_tool_qt/GrUnitsTypeQT/MSVC_2008
+		SccLocalPath15 = ..\\..\\..\\gis_tool_qt\\GrUnitsTypeQT\\MSVC_2008
+		SccProjectUniqueName16 = ..\\..\\..\\gis_tool_qt\\Plugins\\FindeDataPlugin\\MSVC_2008\\FindeDataPlugin.vcproj
+		SccProjectName16 = ../../../gis_tool_qt/Plugins/FindeDataPlugin/MSVC_2008
+		SccLocalPath16 = ..\\..\\..\\gis_tool_qt\\Plugins\\FindeDataPlugin\\MSVC_2008
+		SccProjectUniqueName17 = ..\\..\\..\\gis_tool_qt\\PropertyBrowserQT\\MSVC_2008\\PropertyBrowserQT.vcproj
+		SccProjectName17 = ../../../gis_tool_qt/PropertyBrowserQT/MSVC_2008
+		SccLocalPath17 = ..\\..\\..\\gis_tool_qt\\PropertyBrowserQT\\MSVC_2008
+		SccProjectUniqueName18 = ..\\..\\..\\gis\\TknMetafile\\MSVC_2008\\TknMetafile.vcproj
+		SccProjectName18 = ../../../gis/TknMetafile/MSVC_2008
+		SccLocalPath18 = ..\\..\\..\\gis\\TknMetafile\\MSVC_2008
+		SccProjectUniqueName19 = ..\\..\\..\\gis_tool_qt\\QtExtendUi\\MSVC_2008\\QtExtendUi.vcproj
+		SccProjectName19 = ../../../gis_tool_qt/QtExtendUi/MSVC_2008
+		SccLocalPath19 = ..\\..\\..\\gis_tool_qt\\QtExtendUi\\MSVC_2008
+		SccProjectUniqueName20 = ..\\..\\..\\gis_tool_qt\\TknEditorGeoQT\\MSVC_2008\\TknEditorGeoQT.vcproj
+		SccProjectName20 = ../../../gis_tool_qt/TknEditorGeoQT/MSVC_2008
+		SccLocalPath20 = ..\\..\\..\\gis_tool_qt\\TknEditorGeoQT\\MSVC_2008
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug VLD|Win32 = Debug VLD|Win32
+		Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I) = Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I)
+		Debug|Win32 = Debug|Win32
+		Debug|Windows Mobile 6 Professional SDK (ARMV4I) = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		Release|Win32 = Release|Win32
+		Release|Windows Mobile 6 Professional SDK (ARMV4I) = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Debug|Win32.Build.0 = Debug|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Release|Win32.ActiveCfg = Release|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Release|Win32.Build.0 = Release|Win32
+		{FE4D20E8-FA8B-47B9-8FB4-38DBFCF3C7C8}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Debug|Win32.Build.0 = Debug|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Release|Win32.ActiveCfg = Release|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Release|Win32.Build.0 = Release|Win32
+		{D019683E-20D9-4ADD-840D-5D4005CD5F59}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Debug|Win32.Build.0 = Debug|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Release|Win32.ActiveCfg = Release|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Release|Win32.Build.0 = Release|Win32
+		{53529E51-BE53-457C-8EF6-EF8161FEFF8E}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Debug|Win32.Build.0 = Debug|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Release|Win32.ActiveCfg = Release|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Release|Win32.Build.0 = Release|Win32
+		{A0ACF68F-E134-4A9A-BD42-C363F5A42B53}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Debug|Win32.Build.0 = Debug|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Release|Win32.ActiveCfg = Release|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Release|Win32.Build.0 = Release|Win32
+		{1DC0DD6C-0C3E-49FE-B932-FA96D5BCF683}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Debug|Win32.Build.0 = Debug|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Release|Win32.ActiveCfg = Release|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Release|Win32.Build.0 = Release|Win32
+		{78E67AC7-4BF4-4A41-B8F5-5ED9A36E39B9}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Debug|Win32.Build.0 = Debug|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Release|Win32.ActiveCfg = Release|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Release|Win32.Build.0 = Release|Win32
+		{3ACCD309-5BB4-4D52-83B9-D1C343D9AB87}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Debug|Win32.Build.0 = Debug|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Release|Win32.ActiveCfg = Release|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Release|Win32.Build.0 = Release|Win32
+		{D793BD5A-E2F9-48CF-93FD-48990DA29E68}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Debug|Win32.Build.0 = Debug|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Release|Win32.ActiveCfg = Release|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Release|Win32.Build.0 = Release|Win32
+		{33C396A7-D9B2-4AF1-BC0E-B4F3758F3F41}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Debug|Win32.Build.0 = Debug|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Release|Win32.ActiveCfg = Release|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Release|Win32.Build.0 = Release|Win32
+		{BC740A8F-4D98-4F2C-8A7C-6843339E658F}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Debug|Win32.Build.0 = Debug|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Release|Win32.ActiveCfg = Release|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Release|Win32.Build.0 = Release|Win32
+		{EFCFB920-4B16-4164-AAB3-0E0A4F1BBA99}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Debug|Win32.Build.0 = Debug|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Release|Win32.ActiveCfg = Release|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Release|Win32.Build.0 = Release|Win32
+		{6FE227ED-A403-46B9-904B-51B432EA88BB}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Debug|Win32.Build.0 = Debug|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Release|Win32.ActiveCfg = Release|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Release|Win32.Build.0 = Release|Win32
+		{CC2D8D20-9302-4C9A-97A9-EFEDCB1C3F56}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Debug|Win32.Build.0 = Debug|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Release|Win32.ActiveCfg = Release|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Release|Win32.Build.0 = Release|Win32
+		{0682CE22-D98D-451C-9245-881DEBB10756}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Debug|Win32.Build.0 = Debug|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Release|Win32.ActiveCfg = Release|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Release|Win32.Build.0 = Release|Win32
+		{0FEEE714-A498-4002-B178-ACA3DA06B598}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Debug|Win32.Build.0 = Debug|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Release|Win32.ActiveCfg = Release|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Release|Win32.Build.0 = Release|Win32
+		{7C6264DB-D5A6-45CB-B418-AA46990CEDE7}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Debug VLD|Win32.ActiveCfg = Debug|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Debug VLD|Win32.Build.0 = Debug|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Debug|Win32.Build.0 = Debug|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Release|Win32.ActiveCfg = Release|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Release|Win32.Build.0 = Release|Win32
+		{DA2762CF-4331-4308-A097-58034B4433A9}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Debug VLD|Win32.ActiveCfg = Debug|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Debug VLD|Win32.Build.0 = Debug|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Debug|Win32.Build.0 = Debug|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Release|Win32.ActiveCfg = Release|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Release|Win32.Build.0 = Release|Win32
+		{5C612B32-3179-43A2-83FC-746A03427946}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Debug|Win32.Build.0 = Debug|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Release|Win32.ActiveCfg = Release|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Release|Win32.Build.0 = Release|Win32
+		{DD254F4E-E2EF-47F5-A63A-581DEACDA61D}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Debug VLD|Win32.ActiveCfg = Debug VLD|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Debug VLD|Win32.Build.0 = Debug VLD|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Debug VLD|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug VLD|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Debug|Win32.Build.0 = Debug|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Release|Win32.ActiveCfg = Release|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Release|Win32.Build.0 = Release|Win32
+		{9501AE23-B3B6-466B-BE8B-65D96642B10D}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+EndGlobal
